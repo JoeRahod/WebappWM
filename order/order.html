@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<title>订单</title>
+	<script>
+		(function(){
+			var dolEL = document.documentElement;
+
+			function setRemUnit(){
+				var rem = dolEL.clientWidth / 10;
+				dolEL.style.fontSize = rem + 'px';
+			}
+
+			setRemUnit();
+
+			window.addEventListener('resize',setRemUnit);
+
+			//窗口出现在当前屏幕时，有兼容性问题
+			window.addEventListener('pageshow',function(e){
+				if(e.persisted){
+					setRemUnit();
+				}
+			})
+		})();
+	</script>
+	<link rel="stylesheet" href="../lib/reset.css">
+	<link rel="stylesheet" href="../common/bottomBar/bottomBar.css">
+	<link rel="stylesheet" href="contentList/contentList.css">
+	<link rel="stylesheet" href="header/header.css">
+</head>
+<body>
+	<!-- 订单头部开始 -->
+	<div class="header">订单</div>
+	<!-- 订单头部结束 -->
+	<!-- 订单列表开始 -->
+	<div class="wrap">
+		<div class="order-list"></div>
+		<div class="loading">加载完成</div>
+	</div>
+	<!-- 订单列表结束 -->
+	<!-- 底部栏开始 -->
+	<div class="bottom-bar"></div>
+	<!-- 底部栏结束 -->
+
+	<script src="../lib/jquery.min.js"></script>
+	<script src="../common/bottomBar/bottomBar.js"></script>
+	<script src="contentList/contentList.js"></script>
+</body>
+</html>
