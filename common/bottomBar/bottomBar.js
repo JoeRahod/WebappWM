@@ -19,7 +19,7 @@
 			str += itemTemplate.replace(/\$key/g,item.key)
 								.replace('$text',item.text);
 		});
-		strFinal = '<a class="index btn-item" href="WebappWM/index.html"><div class="tab-icon"></div><div class="btn-name">首页</div></a>' + str;
+		strFinal = '<a class="index btn-item" href="./index.html"><div class="tab-icon"></div><div class="btn-name">首页</div></a>' + str;
 
 		$('.bottom-bar').append(strFinal);
 
