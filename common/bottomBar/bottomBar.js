@@ -1,6 +1,6 @@
 (function(){
 	
-		strFinal = '<a class="index btn-item" href="https://joerahod.github.io/WebappWM/index.html"><div class="tab-icon"></div><div class="btn-name">首页</div></a><a class="order btn-item" href="https://joerahod.github.io/WebappWM/order/order.html"><div class="tab-icon"></div><div class="btn-name">订单</div></a><a class="my btn-item" href="https://joerahod.github.io/WebappWM/my/my.html"><div class="tab-icon"></div><div class="btn-name">我的</div></a>';
+		var strFinal = '<a class="index btn-item" href="https://joerahod.github.io/WebappWM/index.html"><div class="tab-icon"></div><div class="btn-name">首页</div></a><a class="order btn-item" href="https://joerahod.github.io/WebappWM/order/order.html"><div class="tab-icon"></div><div class="btn-name">订单</div></a><a class="my btn-item" href="https://joerahod.github.io/WebappWM/my/my.html"><div class="tab-icon"></div><div class="btn-name">我的</div></a>';
 
 		$('.bottom-bar').append(strFinal);
 
