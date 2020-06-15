@@ -1,5 +1,5 @@
 (function(){
-	var itemTemplate = '<a class="$key btn-item" href="$key/$key.html">'+
+	var itemTemplate = '<a class="$key btn-item" href="/$key/$key.html">'+
 							'<div class="tab-icon"></div>'+
 							'<div class="btn-name">$text</div>'+
 						'</a>'; 
