@@ -9,7 +9,7 @@
 	// 渲染category
 	function initCategory(){
 		//获取category的数据
-		$.get('../../json/head.json',function(data){
+		$.get('./json/head.json',function(data){
 			console.log(data);
 
 			var list = data.data.primary_filter.splice(0,8);
