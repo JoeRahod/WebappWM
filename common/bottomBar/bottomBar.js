@@ -1,25 +1,6 @@
 (function(){
-	var itemTemplate = '<a class="$key btn-item" href="../$key/$key.html">'+
-							'<div class="tab-icon"></div>'+
-							'<div class="btn-name">$text</div>'+
-						'</a>'; 
-
-	function init(){
-		var items = [{
-			key:'order',
-			text:'订单'
-		},{
-			key:'my',
-			text:'我的'
-		}];
-
-		var str = '',strFinal = '';
-
-		items.forEach(function(item,index){
-			str += itemTemplate.replace(/\$key/g,item.key)
-								.replace('$text',item.text);
-		});
-		strFinal = '<a class="index btn-item" href="../index.html"><div class="tab-icon"></div><div class="btn-name">首页</div></a>' + str;
+	
+		strFinal = '<a class="index btn-item" href="https://joerahod.github.io/WebappWM/index.html"><div class="tab-icon"></div><div class="btn-name">首页</div></a><a class="order btn-item" href="https://joerahod.github.io/WebappWM/order/order.html"><div class="tab-icon"></div><div class="btn-name">订单</div></a><a class="my btn-item" href="https://joerahod.github.io/WebappWM/my/my.html"><div class="tab-icon"></div><div class="btn-name">我的</div></a>';
 
 		$('.bottom-bar').append(strFinal);
 
