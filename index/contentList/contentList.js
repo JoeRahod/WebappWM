@@ -26,7 +26,7 @@
 	function getList(){
 		page++;
 		isLoading = true;
-		$.get('../../json/homelist.json',function(data){
+		$.get('./json/homelist.json',function(data){
 			setTimeout(function(){
 				console.log(data);
 				var list = data.data.poilist || [];
